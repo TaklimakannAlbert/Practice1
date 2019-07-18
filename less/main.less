@@ -207,24 +207,33 @@ p {
 .intro {
 	text-align: center;
 	margin-bottom: 100px;
-}
-.intro h2{
+	h2 {
 	margin: 0;
 	padding-bottom: 10px;
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	color: #333;
 	font-weight: normal;
-}
-.intro hr {
+	}
+	hr {
 	width: 60px;
 	margin: 0 auto;
 	height: 2px;
 	background: #595959;
 	border: none;
-}
-.intro p{
+	}
+	p {
 	color: @gray-text;
+	}
+	&.big {
+		h2 {
+			padding: 0;
+		}
+		p {
+			margin: 0;
+			text-transform: uppercase;
+		}
+	}
 }
 .category {
 	position: relative;
@@ -282,31 +291,31 @@ p {
 }
 .thumbnail {
 	position: relative;
-}
-.thumbnail img {
-	width: 100%;
-	height: auto;
-}
-.thumbnail .cover {
-    position: absolute;
-    background: rgba(255,255,255,0.9);
-    border: 20px solid rgba(0,0,0,.1);
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    text-align: center;
-    opacity: 0;
-
-    transition: all 0.5s;
-}
-.thumbnail .cover:hover {
-	opacity: 1;
-}
-.thumbnail .cover a {
-	text-decoration: none;
-	top: 45%;
-	position: absolute;
+	img {
+		width: 100%;
+		height: auto;
+	}
+	.cover {
+		position: absolute;
+		background: rgba(255,255,255,0.9);
+		border: 20px solid rgba(0,0,0,.1);
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		text-align: center;
+		opacity: 0;
+		transition: all 0.5s;
+		> a {
+			color: #333;
+			text-decoration: none;
+			top: 45%;
+			position: absolute;
+		}
+	}
+	.cover:hover {
+		opacity: 1;
+	}
 }
 .event {
 	padding: 150px 0;

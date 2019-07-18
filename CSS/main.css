@@ -16,6 +16,45 @@
 .about #content .feature p {
   color: white;
 }
+.about #content .member .name {
+  font-weight: normal;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.about #content .member .title {
+  color: #A5A5A5;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+.about #content .cover h3 {
+  margin: 30px 0;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 14px;
+}
+.about #content .cover p {
+  font-size: 14px;
+}
+.about #content .cover .social-media {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+.about #content .cover .social-media ul {
+  display: inline-block;
+}
+.about #content .cover .social-media li {
+  float: left;
+  margin: 0 10px;
+}
+.about #content .cover .social-media a {
+  color: black;
+  text-decoration: none;
+}
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -234,6 +273,13 @@ p {
 .intro p {
   color: #7e7e7e;
 }
+.intro.big h2 {
+  padding: 0;
+}
+.intro.big p {
+  margin: 0;
+  text-transform: uppercase;
+}
 .category {
   position: relative;
   margin-bottom: 20px;
@@ -307,13 +353,14 @@ p {
   -o-transition: all 0.5s;
   transition: all 0.5s;
 }
-.thumbnail .cover:hover {
-  opacity: 1;
-}
-.thumbnail .cover a {
+.thumbnail .cover > a {
+  color: #333;
   text-decoration: none;
   top: 45%;
   position: absolute;
+}
+.thumbnail .cover:hover {
+  opacity: 1;
 }
 .event {
   padding: 150px 0;
