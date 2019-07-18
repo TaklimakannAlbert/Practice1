@@ -16,6 +16,9 @@
 .about #content .feature p {
   color: white;
 }
+.about #content .team-member {
+  padding: 100px 0;
+}
 .about #content .member .name {
   font-weight: normal;
   font-size: 14px;
@@ -54,6 +57,19 @@
 .about #content .cover .social-media a {
   color: black;
   text-decoration: none;
+}
+.about #content .gray-bg {
+  padding: 100px 0;
+  text-align: center;
+}
+.about #content .gray-bg .count {
+  font-size: 36px;
+}
+.about #content .gray-bg h4 {
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: normal;
+  color: #323232;
 }
 * {
   -webkit-box-sizing: border-box;
@@ -112,11 +128,15 @@ p {
 .row {
   margin: 0 -10px;
 }
+.col-3,
 .col-4,
 .col-6,
 .col-12 {
   float: left;
   padding: 0 30px;
+}
+.col-3 {
+  width: 25%;
 }
 .col-4 {
   width: 33.3333%;
@@ -194,6 +214,9 @@ p {
 /* content */
 #content > div {
   padding-top: 100px;
+}
+#content > div.gray-bg {
+  background: #f5f5f5;
 }
 #content > div:first-child {
   padding-top: 0px;
