@@ -71,6 +71,9 @@
   font-weight: normal;
   color: #323232;
 }
+.about #content .clients {
+  padding: 100px 0;
+}
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -128,12 +131,16 @@ p {
 .row {
   margin: 0 -10px;
 }
+.col-2,
 .col-3,
 .col-4,
 .col-6,
 .col-12 {
   float: left;
   padding: 0 30px;
+}
+.col-2 {
+  width: 16.66666666%;
 }
 .col-3 {
   width: 25%;
@@ -214,6 +221,9 @@ p {
 /* content */
 #content > div {
   padding-top: 100px;
+}
+#content > div.full-padding {
+  padding: 100px 0;
 }
 #content > div.gray-bg {
   background: #f5f5f5;
