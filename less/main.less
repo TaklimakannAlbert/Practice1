@@ -1,3 +1,4 @@
+@gray-text: #7e7e7e;
 * {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -21,7 +22,7 @@ img{
 	display: block;
 }
 p {
-	color: #7e7e7e;
+	color: @gray-text;
 	line-height: 30px;
 }
 /* custom class*/
@@ -30,7 +31,10 @@ p {
 	display: block;
 	width: 1170px;
 	margin: 0 auto;
-	margin-top: 30px;
+
+	&.full-width {
+		width: 100%;
+	}
 }
 .button {
 	display: inline-block;
@@ -91,15 +95,58 @@ p {
 }
 
 /* content */
-#content > div {
-	padding-top: 100px;
-}
-#content > div:first-child {
-	padding-top: 0px;
-}
-#content > hr {
-	margin: 0;
-	border-top: 1px solid #eee;
+#content {
+	& > div {
+		padding-top: 100px;
+	}
+	& > div:first-child {
+		padding-top: 0px;
+	}
+	& > hr {
+		margin: 0;
+		border-top: 1px solid #eee;
+	}
+	div.header {
+		padding: 200px 0;
+		background-image: url(http://lorempixel.com/1920/1080);
+		background-size: cover;
+		background-position: 50%;
+		background-repeat: no-repeat;
+		.title {
+			float: left;
+			margin: 0;
+			color: white;
+			text-transform: uppercase;
+			font-weight: normal;
+			letter-spacing: 2px;
+			font-size: 24px;
+		}
+		#breadcrumbs {
+			float: right;
+			padding: 15px;
+			font-size: 12px;
+			background: rgba(0,0,0,.5);
+			li {
+				float: left;
+				color: white;
+				text-transform: uppercase;
+				&:after {
+					content: "/";
+					margin: 0 5px;
+				}
+				&:last-child {
+					&:after {
+						content: "";
+						margin: 0;
+					}
+				}
+			}
+			a{
+				color: @gray-text;
+				text-decoration: none;
+			}
+		}
+	}
 }
 .slider img {
 	width: 100%;
@@ -125,7 +172,7 @@ p {
 	border: none;
 }
 .intro p{
-	color: #7e7e7e;
+	color: @gray-text;
 }
 .category {
 	position: relative;
@@ -170,7 +217,7 @@ p {
 	letter-spacing: 1px;
 }
 .product .price {
-	color: #7e7e7e;
+	color: @gray-text;
 	font-size: 12px;
 	letter-spacing: 1px;
 	line-height: 30px;
@@ -269,11 +316,11 @@ p {
 	font-weight: normal;
 }
 .outlet .info {
-	color: #7e7e7e;
+	color: @gray-text;
 	line-height: 30px;
 }
 .outlet .info a {
-	color: #7e7e7e;
+	color: @gray-text;
 	text-decoration: none;
 }
 .outlet .map a {

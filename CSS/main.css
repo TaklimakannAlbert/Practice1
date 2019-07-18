@@ -29,7 +29,9 @@ p {
   display: block;
   width: 1170px;
   margin: 0 auto;
-  margin-top: 30px;
+}
+.container.full-width {
+  width: 100%;
 }
 .button {
   display: inline-block;
@@ -98,6 +100,45 @@ p {
 #content > hr {
   margin: 0;
   border-top: 1px solid #eee;
+}
+#content div.header {
+  padding: 200px 0;
+  background-image: url(http://lorempixel.com/1920/1080);
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+#content div.header .title {
+  float: left;
+  margin: 0;
+  color: white;
+  text-transform: uppercase;
+  font-weight: normal;
+  letter-spacing: 2px;
+  font-size: 24px;
+}
+#content div.header #breadcrumbs {
+  float: right;
+  padding: 15px;
+  font-size: 12px;
+  background: rgba(0, 0, 0, 0.5);
+}
+#content div.header #breadcrumbs li {
+  float: left;
+  color: white;
+  text-transform: uppercase;
+}
+#content div.header #breadcrumbs li:after {
+  content: "/";
+  margin: 0 5px;
+}
+#content div.header #breadcrumbs li:last-child:after {
+  content: "";
+  margin: 0;
+}
+#content div.header #breadcrumbs a {
+  color: #7e7e7e;
+  text-decoration: none;
 }
 .slider img {
   width: 100%;
@@ -190,6 +231,8 @@ p {
   bottom: 0;
   text-align: center;
   opacity: 0;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
   transition: all 0.5s;
 }
 .thumbnail .cover:hover {
@@ -294,6 +337,8 @@ p {
   background: #fff;
   top: -50px;
   left: 50%;
+  -webkit-transform: translate(-50%);
+  -ms-transform: translate(-50%);
   transform: translate(-50%);
 }
 #footer .copyright {
