@@ -1,0 +1,34 @@
+@import "basic.less";
+
+.service {
+	#header {
+		position: absolute;
+		width: 100%;
+	}
+	#content {
+		.header {
+			background-image: url(http://dummyimage.com/1920x1080/eee/ddd);
+			&.black {
+				.title,	#breadcrumb li{
+					color: black;
+				}
+			}
+		}
+	}
+	.services {
+		padding: 100px 0;
+		.row {
+			> div {
+				padding: 50px;
+				&:hover {
+					transition: all 0.3s;
+					background-color: black;
+					color: white;
+					i {
+					color: @branding-color;
+					}
+				}
+			}
+		}
+	}
+}

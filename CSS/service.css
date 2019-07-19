@@ -1,0 +1,27 @@
+.service #header {
+  position: absolute;
+  width: 100%;
+}
+.service #content .header {
+  background-image: url(http://dummyimage.com/1920x1080/eee/ddd);
+}
+.service #content .header.black .title,
+.service #content .header.black #breadcrumb li {
+  color: black;
+}
+.service .services {
+  padding: 100px 0;
+}
+.service .services .row > div {
+  padding: 50px;
+}
+.service .services .row > div:hover {
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  background-color: black;
+  color: white;
+}
+.service .services .row > div:hover i {
+  color: #d6b161;
+}
