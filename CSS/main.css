@@ -159,6 +159,44 @@
 .contact .contact-info .address {
   margin-bottom: 30px;
 }
+.contact #footer .footer-logo {
+  display: inline-block;
+}
+.contact #footer .social-link {
+  float: none;
+  display: inline-block;
+  padding: 50px 0;
+}
+.contact #footer .social-link li {
+  float: left;
+}
+.contact #footer .social-link a {
+  display: inline-block;
+  border: 1px solid white;
+  border-radius: 20px;
+  width: 40px;
+  height: 40px;
+  color: white;
+  line-height: 40px;
+  text-align: center;
+  text-decoration: none;
+  margin: 10px;
+}
+.contact #footer .copyright {
+  float: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  padding: 30px 0px 0px 0px;
+}
+.contact #footer .copyright p {
+  color: #6f7273;
+}
+.contact #footer hr {
+  margin: 0;
+  border-top: 1px dashed #7e7e7e;
+  overflow: hidden;
+}
 .team #content .team-header {
   padding: 40px;
   background-color: #f5f5f5;
@@ -893,18 +931,6 @@ p {
 #footer .social-media li {
   float: left;
 }
-#footer .social-media a {
-  display: inline-block;
-  border: 1px solid #222;
-  border-radius: 20px;
-  width: 40px;
-  height: 40px;
-  color: #222;
-  line-height: 40px;
-  text-align: center;
-  text-decoration: none;
-  margin: 10px;
-}
 #footer.dark {
   padding: 0;
   background: #222;
@@ -953,6 +979,12 @@ p {
 #footer.dark .buttom .copyright a {
   color: white;
   text-decoration: none;
+}
+#footer.dark.short-pad {
+  padding: 40px 0;
+}
+#footer.dark.text-center {
+  text-align: center;
 }
 #footer.dark .social-media a {
   margin: 0;
