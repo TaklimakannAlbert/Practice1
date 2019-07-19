@@ -1,0 +1,77 @@
+@import "basic.less";
+
+.clients {
+	#content {
+		.clients {
+			padding: 100px;
+		}
+		.portfolio {
+			position: relative;
+			height: 691.689px;
+			margin: 50px 0;
+			width: 100%;
+			&.gutter {
+				padding: 10px;
+			}
+		}
+		.portfolio-item {
+			float: left;
+			left: 0;
+			top: 0;
+			padding: 10px;
+			.thumb {
+				position: relative;
+				}
+			}
+		.feature {
+				padding: 100px 0;
+				background: url(http://lorempixel.com/1920/1080);
+				background-size: cover;
+				background-position: 50% 50%;
+				background-attachment: fixed;
+				background-repeat: no-repeat;
+				h3 {
+					color: white;
+					font-size: 14px;
+				}
+				p {
+					color: white;
+					font-size: 16px;
+				}
+				&.feature-brief i {
+					display: block;
+					padding-bottom: 30px;
+					font-size: 70px;
+					color: @branding-color;
+				}
+			}
+			.services {
+				padding: 100px 0;
+			}
+			.special-offer {
+				padding: 60px 0;
+				.promo-info {
+					text-align: center;
+					color: @branding-color;
+				}
+				.promo-button {
+					border-radius: 4px;
+					margin: 30px 0 0 0;
+				}
+				.title {
+					margin-bottom: 10px;
+					font-size: 18px;
+					letter-spacing: 1px;
+	
+				}
+				.desc {
+					color: @gray-text;
+				}
+	
+			}
+			.promo-box {
+				background-color: #f5f5f5;
+				padding: 40px;
+			}
+		}
+}

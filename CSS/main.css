@@ -333,6 +333,75 @@
   color: black;
   text-decoration: none;
 }
+.clients #content .clients {
+  padding: 100px;
+}
+.clients #content .portfolio {
+  position: relative;
+  height: 691.689px;
+  margin: 50px 0;
+  width: 100%;
+}
+.clients #content .portfolio.gutter {
+  padding: 10px;
+}
+.clients #content .portfolio-item {
+  float: left;
+  left: 0;
+  top: 0;
+  padding: 10px;
+}
+.clients #content .portfolio-item .thumb {
+  position: relative;
+}
+.clients #content .feature {
+  padding: 100px 0;
+  background: url(http://lorempixel.com/1920/1080);
+  background-size: cover;
+  background-position: 50% 50%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+.clients #content .feature h3 {
+  color: white;
+  font-size: 14px;
+}
+.clients #content .feature p {
+  color: white;
+  font-size: 16px;
+}
+.clients #content .feature.feature-brief i {
+  display: block;
+  padding-bottom: 30px;
+  font-size: 70px;
+  color: #d6b161;
+}
+.clients #content .services {
+  padding: 100px 0;
+}
+.clients #content .special-offer {
+  padding: 60px 0;
+}
+.clients #content .special-offer .promo-info {
+  text-align: center;
+  color: #d6b161;
+}
+.clients #content .special-offer .promo-button {
+  border-radius: 4px;
+  margin: 30px 0 0 0;
+}
+.clients #content .special-offer .title {
+  margin-bottom: 10px;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+.clients #content .special-offer .desc {
+  color: #7e7e7e;
+}
+.clients #content .promo-box {
+  background-color: #f5f5f5;
+  padding: 40px;
+}
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
