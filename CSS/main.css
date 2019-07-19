@@ -197,11 +197,14 @@
   border-top: 1px dashed #7e7e7e;
   overflow: hidden;
 }
-.team #content .team-header {
+.contact #nav {
+  padding: 0 30px;
+}
+.team #content .full-header {
   padding: 40px;
   background-color: #f5f5f5;
 }
-.team #content .team-header .title {
+.team #content .full-header .title {
   float: left;
   color: black;
   text-transform: uppercase;
@@ -209,26 +212,26 @@
   letter-spacing: 2px;
   font-size: 18px;
 }
-.team #content .team-header #breadcrumbs {
+.team #content .full-header #breadcrumbs {
   float: right;
   padding: 15px;
   font-size: 12px;
   letter-spacing: 2px;
 }
-.team #content .team-header #breadcrumbs li {
+.team #content .full-header #breadcrumbs li {
   float: left;
   color: black;
   text-transform: uppercase;
 }
-.team #content .team-header #breadcrumbs li:after {
+.team #content .full-header #breadcrumbs li:after {
   content: "/";
   margin: 0 5px;
 }
-.team #content .team-header #breadcrumbs li:last-child:after {
+.team #content .full-header #breadcrumbs li:last-child:after {
   content: "";
   margin: 0;
 }
-.team #content .team-header #breadcrumbs a {
+.team #content .full-header #breadcrumbs a {
   color: #7e7e7e;
   text-decoration: none;
 }
@@ -401,6 +404,44 @@
 .clients #content .promo-box {
   background-color: #f5f5f5;
   padding: 40px;
+}
+.career #content .full-header {
+  padding: 40px;
+  background-color: #f5f5f5;
+}
+.career #content .full-header .title {
+  float: left;
+  color: black;
+  text-transform: uppercase;
+  font-weight: normal;
+  letter-spacing: 2px;
+  font-size: 18px;
+}
+.career #content .full-header #breadcrumbs {
+  float: right;
+  padding: 15px;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+.career #content .full-header #breadcrumbs li {
+  float: left;
+  color: black;
+  text-transform: uppercase;
+}
+.career #content .full-header #breadcrumbs li:after {
+  content: "/";
+  margin: 0 5px;
+}
+.career #content .full-header #breadcrumbs li:last-child:after {
+  content: "";
+  margin: 0;
+}
+.career #content .full-header #breadcrumbs a {
+  color: #7e7e7e;
+  text-decoration: none;
+}
+.career #content .services .row > div {
+  padding: 50px;
 }
 * {
   -webkit-box-sizing: border-box;
