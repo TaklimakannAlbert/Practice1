@@ -9,6 +9,23 @@
 .service #content .header.black #breadcrumb li {
   color: black;
 }
+.service #content .special-services {
+  padding: 100px 0;
+}
+.service #content .special-services .title {
+  margin-bottom: 5px;
+  font-size: 16px;
+  color: #d6b161;
+}
+.service #content .special-services .subtitle {
+  margin: 0;
+  font-size: 18px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+.service #content .special-services p {
+  margin-bottom: 30px;
+}
 .service .services {
   padding: 100px 0;
 }
@@ -24,4 +41,19 @@
 }
 .service .services .row > div:hover i {
   color: #d6b161;
+}
+.service .feature {
+  padding: 100px 0;
+}
+.service .big-dot li {
+  float: left;
+  margin-bottom: 10px;
+  width: 50%;
+  line-height: 1.5;
+}
+.service .big-dot li:before {
+  font-family: "fontello";
+  content: '\f10c';
+  color: #757575;
+  padding-right: 10px;
 }

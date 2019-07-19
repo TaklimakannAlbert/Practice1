@@ -49,11 +49,23 @@ p {
     color: #222;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 14px;
-}
-.button.bordered {
+	font-size: 14px;
+	&.bordered {
 	border: 1px solid black;
-
+	}
+	&.black {
+		background: #222;
+		color: white;
+		&:hover {
+			background-color: @branding-color;
+			transition: 0.2s linear all;
+		}
+	}
+	&.rounded {
+		-webkit-border-radius: 4px;
+		-moz-border-radius: 4px;
+		border-radius: 4px;
+	}
 }
 .clearfix, .row {
 	&:after{
@@ -72,7 +84,7 @@ p {
 		}
 	}
 }
-.col-2, .col-3, .col-4, .col-6 , .col-12{
+.col-2, .col-3, .col-4,.col-5, .col-6, .col-7, .col-12{
 	float: left;
 	padding: 0 30px;
 }
@@ -85,8 +97,14 @@ p {
 .col-4 {
 	width: 33.3333%;
 }
+.col-5{
+width: 41.66666666666666%;
+}
 .col-6 {
 	width: 50%;
+}
+.col-7{
+width: 58.33333333333333%;
 }
 .col-12 {
 	width: 100%;
@@ -182,6 +200,9 @@ p {
 		}
 	}
 }
+.title-block {
+	margin-bottom: 30px;
+}
 
 /* content */
 #content {
@@ -249,6 +270,24 @@ p {
 			&.transparent {
 				background: transparent;
 			}
+		}
+	}
+	.feature-item {
+		position: relative;
+		padding-left: 80px;
+		margin-bottom: 80px;
+		.icon {
+			position: absolute;
+			left: 0;
+			top: 0;
+			font-size: 36px;
+		}
+		.title {
+					margin-bottom: 20px;
+			font-size: 18px;
+		}
+		.desc {
+			color: @gray-text;
 		}
 	}
 }
@@ -431,25 +470,30 @@ p {
 .outlets {
 	padding-bottom: 100px;
 }
-.outlet h3 {
-	margin: 0;
-	margin-bottom: 30px;
-	text-transform: uppercase;
-	font-weight: normal;
+.outlet {
+	h3 {
+		margin: 0;
+		margin-bottom: 30px;
+		text-transform: uppercase;
+		font-weight: normal;
+	}
+	.info {
+		color: @gray-text;
+		line-height: 30px;
+	}
+		a {
+			color: @gray-text;
+			text-decoration: none;
+	}
+	.map {
+		a {
+			color: @branding-color;
+			text-decoration: none;
+			text-transform: uppercase;
+		}
+	}
 }
-.outlet .info {
-	color: @gray-text;
-	line-height: 30px;
-}
-.outlet .info a {
-	color: @gray-text;
-	text-decoration: none;
-}
-.outlet .map a {
-	color: @branding-color;
-	text-decoration: none;
-	text-transform: uppercase;
-}
+
 /* footer */
 #footer {
 	background: #f5f5f5;
