@@ -96,6 +96,8 @@
 .service #content .special-services p {
   margin-bottom: 30px;
 }
+.service .feature,
+.service .pricing,
 .service .services {
   padding: 100px 0;
 }
@@ -111,9 +113,6 @@
 }
 .service .services .row > div:hover i {
   color: #d6b161;
-}
-.service .feature {
-  padding: 100px 0;
 }
 .service .big-dot li {
   float: left;
@@ -308,9 +307,6 @@ p {
   text-transform: uppercase;
   font-size: 14px;
 }
-.button.bordered {
-  border: 1px solid black;
-}
 .button.black {
   background: #222;
   color: white;
@@ -320,6 +316,15 @@ p {
   -webkit-transition: 0.2s linear all;
   -o-transition: 0.2s linear all;
   transition: 0.2s linear all;
+}
+.button.full-width {
+  width: 100%;
+}
+.button.bordered {
+  border: 1px solid black;
+}
+.button.bordered.light-border {
+  border-color: #e8e8e8;
 }
 .button.rounded {
   -webkit-border-radius: 4px;
@@ -463,6 +468,54 @@ p {
 }
 .title-block {
   margin-bottom: 30px;
+}
+.pricing .package {
+  padding: 0 15px;
+  text-align: center;
+}
+.pricing .package .box {
+  border: 1px solid #e8e8e8;
+  padding: 50px;
+}
+.pricing .package .name {
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 16px;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.pricing .package .value {
+  margin-bottom: 40px;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 25px 0;
+}
+.pricing .package .price {
+  font-size: 42px;
+}
+.pricing .package .decimal {
+  font-size: 16px;
+  margin-left: -10px;
+}
+.pricing .package .duration {
+  text-transform: uppercase;
+}
+.pricing .package .features li {
+  margin-bottom: 15px;
+}
+.pricing .package.recommended .box {
+  background-color: #222;
+  color: white;
+}
+.pricing .package.recommended .name {
+  color: #d6b161;
+}
+.pricing .package.recommended .value {
+  border-color: rgba(0, 0, 0, 0.2);
+}
+.pricing .package.recommended .features {
+  color: #7d7d7d;
 }
 /* content */
 #content > div {

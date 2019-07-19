@@ -26,6 +26,8 @@
 .service #content .special-services p {
   margin-bottom: 30px;
 }
+.service .feature,
+.service .pricing,
 .service .services {
   padding: 100px 0;
 }
@@ -41,9 +43,6 @@
 }
 .service .services .row > div:hover i {
   color: #d6b161;
-}
-.service .feature {
-  padding: 100px 0;
 }
 .service .big-dot li {
   float: left;
