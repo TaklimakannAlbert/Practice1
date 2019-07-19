@@ -26,6 +26,28 @@
 .service #content .special-services p {
   margin-bottom: 30px;
 }
+.service #content .special-offer {
+  padding: 60px 0;
+}
+.service #content .special-offer .promo-info {
+  float: left;
+}
+.service #content .special-offer .promo-button {
+  float: right;
+  margin: 0;
+}
+.service #content .special-offer .title {
+  margin-bottom: 10px;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+.service #content .special-offer .title em {
+  font-style: normal;
+  color: #d6b161;
+}
+.service #content .special-offer .desc {
+  color: #7e7e7e;
+}
 .service .feature,
 .service .pricing,
 .service .services {

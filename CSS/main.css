@@ -96,6 +96,28 @@
 .service #content .special-services p {
   margin-bottom: 30px;
 }
+.service #content .special-offer {
+  padding: 60px 0;
+}
+.service #content .special-offer .promo-info {
+  float: left;
+}
+.service #content .special-offer .promo-button {
+  float: right;
+  margin: 0;
+}
+.service #content .special-offer .title {
+  margin-bottom: 10px;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+.service #content .special-offer .title em {
+  font-style: normal;
+  color: #d6b161;
+}
+.service #content .special-offer .desc {
+  color: #7e7e7e;
+}
 .service .feature,
 .service .pricing,
 .service .services {
@@ -125,6 +147,17 @@
   content: '\f10c';
   color: #757575;
   padding-right: 10px;
+}
+.contact #content .title {
+  margin-bottom: 30px;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+.contact .content {
+  padding: 100px 0;
+}
+.contact .contact-info .address {
+  margin-bottom: 30px;
 }
 .team #content .team-header {
   padding: 40px;
@@ -301,6 +334,7 @@ p {
   display: inline-block;
   margin-top: 30px;
   padding: 15px 30px;
+  border: none;
   background: #fff;
   color: #222;
   text-decoration: none;
@@ -351,6 +385,7 @@ p {
 .col-5,
 .col-6,
 .col-7,
+.col-8,
 .col-12 {
   float: left;
   padding: 0 30px;
@@ -372,6 +407,9 @@ p {
 }
 .col-7 {
   width: 58.33333333%;
+}
+.col-8 {
+  width: 66.66666667%;
 }
 .col-12 {
   width: 100%;
@@ -516,6 +554,40 @@ p {
 }
 .pricing .package.recommended .features {
   color: #7d7d7d;
+}
+.contact-info {
+  color: #7e7e7e;
+  line-height: 30px;
+}
+.contact-info a {
+  color: #7e7e7e;
+  text-decoration: none;
+}
+.contact-form {
+  display: inline-block;
+  margin-top: 50px;
+}
+.contact-form .col-6,
+.contact-form .col-12 {
+  padding: 0 15px;
+}
+.contact-form label {
+  display: inline-block;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  color: #7e7e7e;
+}
+.contact-form input,
+.contact-form textarea {
+  padding: 6px 12px;
+  border: 1px solid #e5e5e5;
+  width: 100%;
+}
+.contact-form textarea {
+  height: 95px;
+}
+.contact-form .button {
+  margin-top: 0;
 }
 /* content */
 #content > div {
@@ -783,14 +855,6 @@ p {
   margin-bottom: 30px;
   text-transform: uppercase;
   font-weight: normal;
-}
-.outlet .info {
-  color: #7e7e7e;
-  line-height: 30px;
-}
-.outlet a {
-  color: #7e7e7e;
-  text-decoration: none;
 }
 .outlet .map a {
   color: #d6b161;
